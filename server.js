@@ -34,7 +34,7 @@ let routes = require("./controllers/scraper_controller.js");
 
 app.use("/", routes);
 
-mongoose.connect("mongodb:herok....");
+mongoose.connect("mongodb://localhoset/webscraper101");
 
 let db = mongoose.connection;
 

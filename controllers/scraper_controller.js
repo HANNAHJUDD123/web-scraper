@@ -34,7 +34,7 @@ router.get("/savedartivles", function(req, res) {
 });
 
 router.post("/scrape", function(req, res) {
-    request("https://www.nbcnews.com/", function(error, response, html) {
+    request("http://www.nytimes.com/", function(error, response, html) {
         let $ = cheerio.load(html);
         let scrapedArticles = {};
         $("article h2").each(function(i, element) {
